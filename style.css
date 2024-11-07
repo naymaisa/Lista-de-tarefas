@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Emilys Candy", serif;
+    background-color: rgb(223, 187, 202);
+}
+
+header h1,
+h2 {
+    color: rgb(14, 2, 4);
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 16px solid rgba(163, 14, 44, 0.433);
+    text-transform: uppercase;
+}
+
+header img {
+    height: 50px;
+    margin-right: 16px;
+}
+
+header button {
+    margin-left: 16px;
+    width: auto;
+    background-color: rgba(124, 93, 114, 0.475);
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+}
+
+button {
+    border: none;
+}
+
+#adicionar,
+#cancelar {
+    background-color: rgba(124, 93, 114, 0.475);
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    margin-top: 16px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: large;
+}
+
+h2 {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+input {
+    margin-top: 20px;
+    font-size: large;
+}
+
+#adicionar {
+    background-color: rgba(124, 93, 114, 0.475);
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    margin-top: 16px;
+    cursor: pointer;
+}
