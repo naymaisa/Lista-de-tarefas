@@ -6,9 +6,15 @@
     background-color: rgb(223, 187, 202);
 }
 
-header h1,
-h2 {
-    color: rgb(14, 2, 4);
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 header {
@@ -24,45 +30,18 @@ header img {
     margin-right: 16px;
 }
 
-header button {
-    margin-left: 16px;
-    width: auto;
-    background-color: rgba(124, 93, 114, 0.475);
-    font-size: large;
-    font-weight: bolder;
-    color: black;
-}
-
-button {
-    border: none;
-}
-
-#adicionar,
-#cancelar {
-    background-color: rgba(124, 93, 114, 0.475);
-    font-size: large;
-    font-weight: bolder;
-    color: black;
-    margin-top: 16px;
-}
-
-.container {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: large;
+header h1 {
+    color: rgb(14, 2, 4);
 }
 
 h2 {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
     margin-top: 40px;
+    font-size: 2rem;
+    color: rgb(14, 2, 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 input {
@@ -75,6 +54,29 @@ input {
     font-size: large;
     font-weight: bolder;
     color: black;
-    margin-top: 16px;
     cursor: pointer;
+    padding: 10px 20px;
+}
+
+#lista-tarefa {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+#lista-tarefa li {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
 }
